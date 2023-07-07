@@ -1,0 +1,185 @@
+/**
+ * Header
+ */
+
+$headerRateMb: 1.125 * 3.84;
+$headerRate: 1.25;
+
+.header {
+  height: 100vh;
+  background-color: #fdede4;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - #{18vw * $headerRateMb});
+    
+    @media (min-width: $breakpoint) {
+      right: 0;
+      bottom: 0;
+      width: 50vw;
+      height: 50vw;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    width: 91.67%;
+    margin: auto;
+  }
+  
+  &__figure {
+    margin: 0;
+  
+    &.--rings {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width: 9vw * $headerRateMb;
+      margin: 20% auto;
+  
+      @media (min-width: $breakpoint) {
+        width: 15vw * $headerRate;
+        margin: -0.75vw * $headerRate 0;
+      }
+    }
+  
+    &.--groom {
+      position: absolute;
+      left: 0;
+      bottom: 3rem;
+      z-index: 101;
+      width: 15vw * $headerRateMb;
+  
+      @media (min-width: $breakpoint) {
+        bottom: 0;
+        width: 30vw * $headerRate;
+      }
+    }
+  
+    &.--bride {
+      position: absolute;
+      right: 0;
+      bottom: 3rem;
+      z-index: 102;
+      width: 15vw * $headerRateMb;
+  
+      @media (min-width: $breakpoint) {
+        bottom: 0;
+        width: 30vw * $headerRate;
+      }
+    }
+  }  
+
+  &__link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    background: linear-gradient(90deg, #f7d781, #e4673a, #bf2f87, #9c78b2, #7e7ab7);
+    color: #fff;
+    font-size: 120%;
+    text-align: center;
+    letter-spacing: 0.08rem;
+    box-shadow: 6px 6px 18px rgba(0,0,0,0.5);
+
+    &:hover {
+      transform: translate(1px, 3px);
+      filter: brightness(0.85);
+    }
+
+    @media (min-width: $breakpoint) {
+      right: 0;
+      bottom: -2.25rem;
+      width: 30rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      margin: auto;
+      border-radius: 2.25rem;
+      font-size: 133.33%;
+
+      span::after {
+        content: url("./assets/chevron-down.svg");
+        position: absolute;
+        right: 1.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  &__innerGradient, &__innerOpening, &__innerConfetti, &__innerImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__innerGradient {
+    z-index: 10;
+    background: linear-gradient(rgba(#db9e85,20%) 0%, #ffffff 40%, #ffffff 60%, rgba(#e18d68,20%) 100%);
+    opacity: 0.5;
+  }
+
+  &__innerOpening {
+    z-index: 20;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      bottom: -9vw * $headerRateMb;
+      width: 12vw * $headerRateMb;
+      height: 30vw * $headerRateMb;
+      background: url(./assets/opening.svg) no-repeat center center / contain scroll;
+
+      @media (min-width: $breakpoint) {
+        bottom: -24vw * $headerRate;
+        width: 24vw * $headerRate;
+        height: 60vw * $headerRate;
+      }
+    }
+
+    &::before {
+      left: -2.25vw * $headerRateMb;
+
+      @media (min-width: $breakpoint) {
+        left: -4.5vw * $headerRate;
+      }
+    }
+
+    &::after {
+      right: -2.25vw * $headerRateMb;
+
+      @media (min-width: $breakpoint) {
+        right: -4.5vw * $headerRate;
+      }
+    }
+  }
+
+  &__innerConfetti { 
+    z-index: 30; 
+    background: url(./assets/confetti_mb.svg) no-repeat top center / 125% scroll;
+
+    @media (min-width: $breakpoint) {
+      background: url(./assets/confetti.svg) no-repeat top center / 125% scroll;
+    }
+  }
+
+  &__innerImage {
+    z-index: 40;
+  }
+}
