@@ -101,4 +101,193 @@
       }
     }
   }
+
+  &__main {
+    position: relative;
+
+    & > p {
+      width: 21rem;
+      margin: 0 auto;
+      font-weight: 700;
+      text-align: right;
+  
+      @media (min-width: $breakpoint) {
+        width: 42rem;
+        font-size: 150%;
+      }
+    }
+  }
+
+  &__mainItems {
+    list-style-type: none;
+    width: 21rem;
+    margin: 3rem auto 1.5rem;
+    padding: 0;
+
+    @media (min-width: $breakpoint) {
+      width: 48rem;
+      margin: 3rem auto;
+    }
+  }
+
+  &__mainItem {
+    display: flex;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+    font-weight: 700;
+
+    @media (min-width: $breakpoint) {
+      margin: 1.5rem 0;
+    }
+
+    span {
+      display: inline-block;
+
+      @media (min-width: $breakpoint) {
+        font-size: 150%;
+      }
+
+      &.--index {
+        flex: 0 0 3rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 2.75rem;
+        background: url("./assets/campaign_dec.svg") no-repeat center center / contain scroll;
+        text-align: center;
+
+        @media (min-width: $breakpoint) {
+          flex: 0 0 4.5rem;
+          width: 4.5rem;
+          height: 4.5rem;
+          line-height: 4.125rem;
+        }
+      }
+
+      &.--item {
+        flex: auto;
+      }
+
+      &.--small {
+        font-size: 80%;
+      }
+
+      &.--itemType {
+        font-size: 50%;
+      }
+
+      &.--itemBrand {
+        font-size: 80%;
+      }
+    }
+  }
+
+  &__sub {
+    display: none;
+
+    @media (min-width: $breakpoint) {
+      display: block;
+    }
+  }
+
+  &__chance {
+    position: relative;
+    width: 42rem;
+    margin: 4.5rem auto 0;
+    padding-left: 15rem;
+    font-weight: 700;
+    font-size: 150%;
+    text-align: center;
+
+    span {
+      display: inline-block;
+
+      &.--block {
+        border-bottom: 2px solid $bodyColor;
+      }
+
+      &.--large {
+        font-size: 125%;
+      }
+    }
+
+    &::before {
+      content: url("./assets/campaign_chance_label.svg");
+      position: absolute;
+      top: -6rem;
+      left: 0;
+      width: 15rem;
+    }
+  }
+
+  &__subItems {
+    list-style-type: none;
+    width: 42rem;
+    margin: 7.5rem auto 0;
+    padding: 0;
+  }
+
+  &__subItem {
+    display: grid;
+    grid-template-columns: auto 1fr 6rem;
+    margin-bottom: 0.75rem;
+
+    span {
+      &.--item {
+        grid-column: 1 / 2;
+      }
+
+      &.--itemName, &.--itemTarget {
+        font-size: 150%;
+      }
+
+      &.--itemType, &.--itemBrand {
+        font-size: 75%;
+      }
+
+      &.--itemLine {
+        grid-column: 2 / 3;
+        height: 1rem;
+        margin: 0 1rem;
+        border-bottom: 1px dotted $bodyColor;
+      }
+
+      &.--itemTarget {
+        grid-column: 3 / 4;
+      }
+    }
+  }
+
+  &__items {
+    &.--main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+
+      @media (min-width: $breakpoint) {
+        display: block;
+        width: 15rem;
+      }
+
+      @media (min-width: $breakpointLg) {
+        top: -1.5rem;
+        display: block;
+        width: 18rem;
+      }
+    }
+
+    &.--sub {
+      width: 42rem;
+      margin: 3rem auto;
+    }
+
+    &.--mb {
+      width: 91.67%;
+      margin: 1.5rem auto;
+
+      @media (min-width: $breakpoint) {
+        display: none;
+      }
+    }
+  }
 }
