@@ -35,6 +35,11 @@ img {
   vertical-align: middle;
 }
 
+figure {
+  display: block;
+  margin: 0;
+}
+
 button, input, select, textarea {
   font: inherit;
 }
@@ -617,4 +622,101 @@ button, input, select, textarea {
   right: 1.5rem;
   width: 1rem;
   height: 1rem;
+}
+
+/**
+ * Campaign
+ */
+.campaign {
+  width: min(83.33%, 63rem);
+  margin: 4.5rem auto;
+}
+.campaign__description {
+  font-size: 80%;
+  line-height: 1.5;
+}
+@media (min-width: 900px) {
+  .campaign__description {
+    font-size: 125%;
+  }
+}
+.campaign__description > p {
+  width: 19.5rem;
+  margin: auto;
+  padding: 0.75rem;
+  border: 1px solid #ea5532;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .campaign__description > p {
+    width: 42rem;
+    padding: 1.5rem 3rem;
+  }
+}
+.campaign__description > ol {
+  list-style-type: none;
+  width: 21rem;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 900px) {
+  .campaign__description > ol {
+    width: 48rem;
+  }
+}
+.campaign__description > ol > li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ea5532;
+}
+.campaign__description > ol > li:first-child {
+  border-top: 1px solid #ea5532;
+}
+.campaign__description > ol > li span {
+  display: inline-block;
+}
+.campaign__description > ol > li span.--index {
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-top: 2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #db80a9, #1fa5bc);
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .campaign__description > ol > li span.--index {
+    flex: 0 0 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding-top: 3px;
+  }
+}
+.campaign__description > ol > li span.--content {
+  flex: auto;
+}
+.campaign__description > ol > li span.--hashtag {
+  background: linear-gradient(transparent 60%, yellow 80%);
+  font-size: 125%;
+}
+.campaign__description > ol > li span.--small {
+  position: relative;
+  display: block;
+  margin-top: 0.75rem;
+  padding-left: 1.5em;
+  font-size: 80%;
+}
+.campaign__description > ol > li span.--small::before {
+  content: "";
+  position: absolute;
+  top: 0.45em;
+  left: 0;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background-color: #ea5532;
 }

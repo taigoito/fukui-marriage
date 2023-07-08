@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1003 103.06">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_新規グラデーションスウォッチ_9);
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: url(#_新規グラデーションスウォッチ_9-2);
+      }
+    </style>
+    <linearGradient id="_新規グラデーションスウォッチ_9" data-name="新規グラデーションスウォッチ 9" x1="8529.2" y1="-5201.36" x2="8632.26" y2="-5201.36" gradientTransform="translate(9532.2 -5149.83) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7d781"/>
+      <stop offset=".25" stop-color="#e4673a"/>
+      <stop offset=".53" stop-color="#bf2f87"/>
+      <stop offset=".79" stop-color="#9c78b2"/>
+      <stop offset="1" stop-color="#7e7ab7"/>
+    </linearGradient>
+    <linearGradient id="_新規グラデーションスウォッチ_9-2" data-name="新規グラデーションスウォッチ 9" x1="456.53" y1="-5201.36" x2="559.58" y2="-5201.36" gradientTransform="translate(-456.53 -5149.83) scale(1 -1)" xlink:href="#_新規グラデーションスウォッチ_9"/>
+  </defs>
+  <g id="_文字" data-name="文字">
+    <polyline class="cls-1" points="1001.5 0 1001.5 101.56 899.94 101.56"/>
+    <polyline class="cls-2" points="1.5 0 1.5 101.56 103.06 101.56"/>
+  </g>
+</svg>

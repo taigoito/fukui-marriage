@@ -20,7 +20,7 @@ html {
 body {
   margin: 0; // Remove the margin in all browsers
   background-color: #fff;
-  color: #ea5532;
+  color: $bodyColor;
   font-family: "Noto Serif JP", serif;
   -webkit-text-size-adjust: 100%; // Prevent adjustments of font size after orientation changes in iOS
 }
@@ -33,6 +33,11 @@ img {
   width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+figure {
+  display: block;
+  margin: 0;
 }
 
 button, input, select, textarea {
