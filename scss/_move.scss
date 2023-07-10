@@ -1,0 +1,68 @@
+/**
+ * Move
+ */
+
+.move {
+  &__header {
+    position: relative;
+  }
+
+  &__title {
+    width: 9rem;
+    margin: auto;
+  }
+
+  &__figure {
+    margin: 0;
+  
+    &.--rings {
+      display: none;
+  
+      @media (min-width: $breakpoint) {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        z-index: -10;
+        display: block;
+        width: 15vw * $headerRate;
+      }
+    }
+  }
+
+  &__lead {
+    width: 21rem;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+
+    @media (min-width: $breakpoint) {
+      width: 36rem;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    width: min(83.33%, 72rem);
+    margin: auto;
+  }
+
+  &__figure {
+    flex: 0 0 96%;
+    
+    @media (min-width: $breakpoint) {
+      flex: 0 0 48%;
+    }
+
+    figcaption {
+      font-size: 65%;
+      text-align: left;
+    }
+  }
+}

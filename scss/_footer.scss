@@ -1,0 +1,96 @@
+/*
+ * Footer
+ */
+
+.footer {
+  padding: 4.5rem 0;
+  border-top: 1px solid $bodyColor;
+
+  &__inner {
+    position: relative;
+    width: min(83.33%, 72rem);
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 120%;
+    letter-spacing: 0.1em;
+
+    @media (min-width: $breakpoint) {
+      letter-spacing: 0.4em;
+    }
+  }
+
+  &__contact {
+    font-size: 80%;
+
+    @media (min-width: $breakpoint) {
+      display: flex;
+    }
+  }
+
+  &__contactHead {
+    @media (min-width: $breakpoint) {
+      flex: 0 0 6rem;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  &__contactBody {
+    p {
+      margin: 0;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    @media (min-width: $breakpoint) {
+      flex: 0 0 24rem;
+    }
+  }
+
+  &__socialLinks {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      top: -1.5rem;
+      right: 0;
+      width: 18rem;
+      margin: 0;
+    }
+  }
+
+  &__socialLink {
+    width: 1.5rem;
+    margin: 1.5rem;
+
+    &:nth-child(3) {
+      width: 0.75rem;
+    }
+  }
+
+  &__privacy {
+    display: inline-block;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: 80%;
+  }
+
+  &__copyright {
+    display: inline-block;
+    width: 100%;
+    font-size: 80%;
+
+    @media (min-width: $breakpoint) {
+      text-align: center;
+    }
+  }
+}

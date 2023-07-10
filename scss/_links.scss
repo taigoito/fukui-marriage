@@ -1,0 +1,18 @@
+/*
+ * Links
+ */
+
+.links {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    width: min(83.33%, 60rem);
+    margin: 4.5rem auto;
+  }
+
+  &__banner {
+    flex: 0 0 18rem;
+  }
+}
