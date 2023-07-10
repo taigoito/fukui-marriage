@@ -301,11 +301,11 @@ button, input, select, textarea {
   }
 }
 .main__figure.--side {
-  width: 1rem;
+  width: 0.75rem;
   margin: 0 1rem;
 }
 .main__figure.--left {
-  transform: rotate(180deg) translate(0, -16.5rem);
+  transform: rotate(180deg) translate(0, -12rem);
 }
 .main__side {
   display: none;
@@ -313,7 +313,7 @@ button, input, select, textarea {
 @media (min-width: 900px) {
   .main__side {
     position: sticky;
-    top: calc(50% - 8.25rem);
+    top: calc(50% - 6rem);
     left: 0;
     z-index: -1;
     display: flex;
@@ -892,22 +892,21 @@ button, input, select, textarea {
 .campaign__mainItem span.--itemBrand {
   font-size: 80%;
 }
-.campaign__sub {
-  display: none;
-}
-@media (min-width: 900px) {
-  .campaign__sub {
-    display: block;
-  }
-}
 .campaign__chance {
   position: relative;
-  width: 48rem;
-  margin: 4.5rem auto 0;
-  padding-left: 15rem;
+  width: 21rem;
+  margin: 10.5rem auto 0;
   font-weight: 700;
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
+}
+@media (min-width: 900px) {
+  .campaign__chance {
+    width: 48rem;
+    margin: 4.5rem auto 0;
+    padding-left: 15rem;
+    font-size: 150%;
+  }
 }
 .campaign__chance span {
   display: inline-block;
@@ -921,20 +920,43 @@ button, input, select, textarea {
 .campaign__chance::before {
   content: url("./assets/campaign_chance_label.svg");
   position: absolute;
-  top: -6rem;
-  left: 0;
-  width: 15rem;
+  top: -10.5rem;
+  left: 4.5rem;
+  width: 9rem;
+}
+@media (min-width: 900px) {
+  .campaign__chance::before {
+    top: -6rem;
+    left: 0;
+    width: 15rem;
+  }
 }
 .campaign__subItems {
   list-style-type: none;
-  width: 48rem;
-  margin: 7.5rem auto 0;
+  width: 21rem;
+  margin: 1.5rem auto 0;
   padding: 0;
+}
+@media (min-width: 900px) {
+  .campaign__subItems {
+    width: 48rem;
+    margin: 7.5rem auto 0;
+  }
 }
 .campaign__subItem {
   display: grid;
-  grid-template-columns: auto 1fr 6rem;
+  grid-template-columns: 15rem 1fr 4rem;
   margin-bottom: 0.75rem;
+  font-size: 65%;
+}
+@media (min-width: 900px) {
+  .campaign__subItem {
+    grid-template-columns: auto 1fr 6rem;
+    font-size: 100%;
+  }
+}
+.campaign__subItem span {
+  display: inline-block;
 }
 .campaign__subItem span.--item {
   grid-column: 1/2;
@@ -974,12 +996,18 @@ button, input, select, textarea {
   }
 }
 .campaign__items.--sub {
-  width: 48rem;
-  margin: 3rem auto;
+  display: none;
+}
+@media (min-width: 900px) {
+  .campaign__items.--sub {
+    display: block;
+    width: 48rem;
+    margin: 3rem auto;
+  }
 }
 .campaign__items.--mb {
   width: 91.67%;
-  margin: 1.5rem auto;
+  margin: 1.5rem auto 3rem;
 }
 @media (min-width: 900px) {
   .campaign__items.--mb {

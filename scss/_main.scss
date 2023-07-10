@@ -29,12 +29,12 @@
     }
 
     &.--side {
-      width: 1rem;
+      width: 0.75rem;
       margin: 0 1rem;
     }
 
     &.--left {
-      transform: rotate(180deg) translate(0, -16.5rem);
+      transform: rotate(180deg) translate(0, -12rem);
     }
   }
 
@@ -43,7 +43,7 @@
 
     @media (min-width: $breakpoint) {
       position: sticky;
-      top: calc(50% - 8.25rem);
+      top: calc(50% - 6rem);
       left: 0;
       z-index: -1;
       display: flex;
