@@ -78,12 +78,11 @@ $headerRate: 1.25;
     &.--groom {
       position: absolute;
       left: 0;
-      bottom: 3rem;
+      bottom: 0;
       z-index: 101;
       width: 15vw * $headerRateMb;
   
       @media (min-width: $breakpoint) {
-        bottom: 0;
         width: 30vw * $headerRate;
       }
     }
@@ -91,23 +90,22 @@ $headerRate: 1.25;
     &.--bride {
       position: absolute;
       right: 0;
-      bottom: 3rem;
+      bottom: 0;
       z-index: 102;
       width: 15vw * $headerRateMb;
   
       @media (min-width: $breakpoint) {
-        bottom: 0;
         width: 30vw * $headerRate;
       }
     }
-  }  
+  }
 
   &__link {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: 200;
-    display: block;
+    display: none;
     width: 100%;
     height: 3rem;
     line-height: 3rem;
@@ -126,13 +124,14 @@ $headerRate: 1.25;
     @media (min-width: $breakpoint) {
       right: 0;
       bottom: -2.25rem;
+      display: block;
       width: 30rem;
       height: 4.5rem;
       line-height: 4.5rem;
       margin: auto;
       border-radius: 2.25rem;
       font-size: 133.33%;
-
+  
       span::after {
         content: url("./assets/chevron-down.svg");
         position: absolute;
@@ -175,7 +174,7 @@ $headerRate: 1.25;
     &::before, &::after {
       content: "";
       position: absolute;
-      bottom: -9vw * $headerRateMb;
+      bottom: -10.5vw * $headerRateMb;
       width: 12vw * $headerRateMb;
       height: 30vw * $headerRateMb;
       background: url(./assets/opening.svg) no-repeat center center / contain scroll;

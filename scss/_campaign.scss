@@ -354,7 +354,7 @@
 
   &__more {
     position: relative;
-    display: block;
+    display: none;
     width: 83.33%;
     height: 3rem;
     line-height: 3rem;
@@ -373,6 +373,7 @@
     }
 
     @media (min-width: $breakpoint) {
+      display: block;
       width: 30rem;
       height: 4.5rem;
       line-height: 4.5rem;
