@@ -57,6 +57,7 @@ button, input, select, textarea {
   left: 0;
   z-index: 100;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -71,8 +72,26 @@ button, input, select, textarea {
     margin: auto;
   }
 }
-.header__title {
+.header__content.--fade_1 {
+  animation: fade 10s ease-in-out 0s infinite;
+}
+.header__content.--fade_2 {
+  opacity: 0;
+  animation: fade 10s ease-in-out 5s infinite;
+}
+.header__title-1 {
+  flex: 0 0 91.67%;
   width: 91.67%;
+  margin: auto;
+}
+.header__title-2 {
+  flex: 0 0 50%;
+  width: 50%;
+  margin: auto auto 0;
+}
+.header__title-3 {
+  flex: 0 0 83.33%;
+  width: 83.33%;
   margin: auto;
 }
 .header__figure {
@@ -158,7 +177,7 @@ button, input, select, textarea {
     height: 1rem;
   }
 }
-.header__innerGradient, .header__innerOpening, .header__innerConfetti, .header__innerImage {
+.header__innerGradient-1, .header__innerGradient-2, .header__innerOpening, .header__innerConfetti, .header__innerImage {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -166,10 +185,19 @@ button, input, select, textarea {
   height: 100%;
   overflow: hidden;
 }
-.header__innerGradient {
+.header__innerGradient-1 {
   z-index: 10;
   background: linear-gradient(rgba(219, 158, 133, 0.2) 0%, #ffffff 40%, #ffffff 60%, rgba(225, 141, 104, 0.2) 100%);
   opacity: 0.5;
+}
+.header__innerGradient-2 {
+  z-index: 30;
+  background: linear-gradient(45deg, #e6d28b 0%, #d8a287 15%, #e17d97 40%, #dca05b 100%);
+  mix-blend-mode: multiply;
+}
+.header__innerGradient-2.--fade_2 {
+  opacity: 0;
+  animation: fade 10s ease-in-out 5s infinite;
 }
 .header__innerOpening {
   z-index: 20;
@@ -205,8 +233,20 @@ button, input, select, textarea {
     right: -5.625vw;
   }
 }
+.header__innerContent {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 77.76vw);
+}
+@media (min-width: 900px) {
+  .header__innerContent {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+  }
+}
 .header__innerConfetti {
-  z-index: 30;
+  z-index: 40;
   background: url(./assets/confetti_mb.svg) no-repeat top center/125% scroll;
 }
 @media (min-width: 900px) {
@@ -215,9 +255,26 @@ button, input, select, textarea {
   }
 }
 .header__innerImage {
-  z-index: 40;
+  z-index: 50;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /**
  * Main
  */
