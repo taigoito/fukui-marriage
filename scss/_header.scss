@@ -6,7 +6,7 @@ $headerRateMb: 1.125 * 3.84;
 $headerRate: 1.25;
 
 .header {
-  height: 100vh;
+  height: 100svh;
   background-color: #fdede4;
 
   &__content {
@@ -19,7 +19,7 @@ $headerRate: 1.25;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - #{18vw * $headerRateMb});
+    height: calc(100svh - #{18vw * $headerRateMb});
     
     @media (min-width: $breakpoint) {
       right: 0;
@@ -207,7 +207,7 @@ $headerRate: 1.25;
   &__innerContent {
     position: relative;
     width: 100%;
-    height: calc(100vh - #{18vw * $headerRateMb});
+    height: calc(100svh - #{18vw * $headerRateMb});
     
     @media (min-width: $breakpoint) {
       width: 50vw;

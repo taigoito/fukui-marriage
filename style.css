@@ -48,7 +48,7 @@ button, input, select, textarea {
  * Header
  */
 .header {
-  height: 100vh;
+  height: 100svh;
   background-color: #fdede4;
 }
 .header__content {
@@ -61,7 +61,7 @@ button, input, select, textarea {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 77.76vw);
+  height: calc(100svh - 77.76vw);
 }
 @media (min-width: 900px) {
   .header__content {
@@ -236,7 +236,7 @@ button, input, select, textarea {
 .header__innerContent {
   position: relative;
   width: 100%;
-  height: calc(100vh - 77.76vw);
+  height: calc(100svh - 77.76vw);
 }
 @media (min-width: 900px) {
   .header__innerContent {
