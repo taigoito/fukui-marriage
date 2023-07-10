@@ -6,6 +6,27 @@
   width: min(83.33%, 63rem);
   margin: 4.5rem auto;
 
+  &__header {
+    position: relative;
+  }
+
+  &__figure {
+    margin: 0;
+  
+    &.--rings {
+      display: none;
+  
+      @media (min-width: $breakpoint) {
+        position: absolute;
+        top: 25%;
+        left: -15%;
+        z-index: -10;
+        display: block;
+        width: 15vw * $headerRate;
+      }
+    }
+  }
+
   &__description {
     font-size: 80%;
     line-height: 1.5;

@@ -308,14 +308,19 @@ button, input, select, textarea {
   transform: rotate(180deg) translate(0, -16.5rem);
 }
 .main__side {
-  position: sticky;
-  top: calc(50% - 8.25rem);
-  left: 0;
-  z-index: -1;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 0;
+  display: none;
+}
+@media (min-width: 900px) {
+  .main__side {
+    position: sticky;
+    top: calc(50% - 8.25rem);
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0;
+  }
 }
 
 /**
@@ -704,6 +709,25 @@ button, input, select, textarea {
 .campaign {
   width: min(83.33%, 63rem);
   margin: 4.5rem auto;
+}
+.campaign__header {
+  position: relative;
+}
+.campaign__figure {
+  margin: 0;
+}
+.campaign__figure.--rings {
+  display: none;
+}
+@media (min-width: 900px) {
+  .campaign__figure.--rings {
+    position: absolute;
+    top: 25%;
+    left: -15%;
+    z-index: -10;
+    display: block;
+    width: 18.75vw;
+  }
 }
 .campaign__description {
   font-size: 80%;
