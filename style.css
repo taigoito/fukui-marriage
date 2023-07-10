@@ -300,6 +300,23 @@ button, input, select, textarea {
     display: none;
   }
 }
+.main__figure.--side {
+  width: 1rem;
+  margin: 0 1rem;
+}
+.main__figure.--left {
+  transform: rotate(180deg) translate(0, -16.5rem);
+}
+.main__side {
+  position: sticky;
+  top: calc(50% - 8.25rem);
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 0;
+}
 
 /**
  * Hundred Reasons
