@@ -191,7 +191,7 @@ button, input, select, textarea {
 }
 .header__innerGradient-2 {
   z-index: 30;
-  background: linear-gradient(45deg, #e6d28b 0%, #d8a287 15%, #e17d97 40%, #dca05b 100%);
+  background: linear-gradient(135deg, rgba(230, 210, 139, 0.5) 0%, rgba(216, 162, 135, 0.5) 15%, rgba(225, 125, 151, 0.5) 40%, rgba(220, 160, 91, 0.5) 100%);
   mix-blend-mode: multiply;
 }
 .header__innerGradient-2.--fade_2 {
@@ -1042,7 +1042,7 @@ button, input, select, textarea {
   width: min(91.67%, 48rem);
   margin: 1.5rem auto;
 }
-.campaign__duration {
+.campaign__period {
   width: min(91.67%, 48rem);
   margin: 1.5rem auto;
 }

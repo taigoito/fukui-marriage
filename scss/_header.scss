@@ -159,7 +159,7 @@ $headerRate: 1.25;
 
   &__innerGradient-2 {
     z-index: 30;
-    background: linear-gradient(45deg, #e6d28b 0%, #d8a287 15%, #e17d97 40%, #dca05b 100%);
+    background: linear-gradient(135deg, rgba(#e6d28b,50%) 0%, rgba(#d8a287,50%) 15%, rgba(#e17d97,50%) 40%, rgba(#dca05b,50%) 100%);
     mix-blend-mode: multiply;
 
     &.--fade_2 {
