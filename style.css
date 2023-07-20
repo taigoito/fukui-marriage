@@ -183,6 +183,16 @@ button, input, select, textarea {
     font-size: 75%;
     letter-spacing: 0.2em;
   }
+  .header__link .--banzaiLeft {
+    display: inline-block;
+    font-size: 90%;
+    transform: rotate(15deg);
+  }
+  .header__link .--banzaiRight {
+    display: inline-block;
+    font-size: 90%;
+    transform: rotate(-15deg);
+  }
 }
 .header__innerGradient-1, .header__innerGradient-2, .header__innerOpening, .header__innerConfetti, .header__innerImage {
   position: absolute;
