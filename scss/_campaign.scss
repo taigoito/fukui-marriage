@@ -25,6 +25,19 @@
         width: 15vw * $headerRate;
       }
     }
+  
+    &.--chance {
+      display: none;
+  
+      @media (min-width: $breakpoint) {
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        z-index: -10;
+        display: block;
+        width: 15vw * $headerRate;
+      }
+    }
   }
 
   &__description {
@@ -206,7 +219,7 @@
   &__chance {
     position: relative;
     width: 21rem;
-    margin: 10.5rem auto 0;
+    margin: 12rem auto 0;
     font-weight: 700;
     font-size: 100%;
     text-align: center;
@@ -233,9 +246,9 @@
     &::before {
       content: url("./assets/campaign_chance_label.svg");
       position: absolute;
-      top: -10.5rem;
+      top: -13.5rem;
       left: 4.5rem;
-      width: 9rem;
+      width: 12rem;
 
       @media (min-width: $breakpoint) {
         top: -6rem;
