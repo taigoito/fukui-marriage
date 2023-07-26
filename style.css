@@ -349,6 +349,9 @@ button, input, select, textarea {
 .main__figure.--left {
   transform: rotate(180deg) translate(0, -12rem);
 }
+.main__content {
+  overflow: hidden;
+}
 .main__side {
   display: none;
 }

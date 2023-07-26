@@ -38,6 +38,10 @@
     }
   }
 
+  &__content {
+    overflow: hidden;
+  }
+
   &__side {
     display: none;
 
