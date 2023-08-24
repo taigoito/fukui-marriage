@@ -274,6 +274,17 @@ button, input, select, textarea {
 .header__innerImage {
   z-index: 110;
 }
+.header__side {
+  position: fixed;
+  top: 3rem;
+  right: 0;
+  z-index: 1000;
+  width: 3rem;
+}
+.header__side:hover {
+  transform: translate(1px, 3px);
+  filter: brightness(0.85);
+}
 
 @keyframes fade {
   0% {
@@ -815,6 +826,9 @@ button, input, select, textarea {
     padding: 1.5rem 3rem;
     font-size: 100%;
   }
+}
+.campaign__description > p > img {
+  padding: 0.75rem 3rem 0;
 }
 .campaign__description > ol {
   list-style-type: none;
