@@ -363,6 +363,13 @@
     margin: 1.5rem auto;
   }
 
+  &__note {
+    width: min(100%, 48rem);
+    margin: 0 auto;
+    font-size: 87.5%;
+    line-height: 1.8;
+  }
+
   &__notes {
     width: min(100%, 48rem);
     margin: 1.5rem auto;

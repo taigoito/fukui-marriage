@@ -1099,6 +1099,12 @@ button, input, select, textarea {
   width: min(91.67%, 48rem);
   margin: 1.5rem auto;
 }
+.campaign__note {
+  width: min(100%, 48rem);
+  margin: 0 auto;
+  font-size: 87.5%;
+  line-height: 1.8;
+}
 .campaign__notes {
   width: min(100%, 48rem);
   margin: 1.5rem auto;
